@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Green-Landing</title>
+	<script src="libs/btn/anim-menu-btn.min.js" defer></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<link rel="stylesheet" href="css/main.css">
+	<script src="js/app.js" defer></script>
+	<!-- браузер загружает скрипт параллельно с HTML, но выполняет его только после полной загрузки DOM -->
+</head>
+
+<body>
+	<div class="swiper slider">
+		<div class="slider-ui">
+			<header class="container ">
+				<div class="top-line">
+					<div class="row">
+						<div class="col col-center">
+							<a class="logo" href=""><img src="./img/logo.svg" alt=""></a>
+						</div>
+						<div class="col col-center col-lead ">
+							<nav class="main-menu">
+								<ul>
+									<li class="active"><a href="store.html">Main</a></li>
+									<li><a href="store.html">Info</a></li>
+									<li><a href="store.html">Contact</a></li>
+								</ul>
+							</nav>
+							<a class="button button-top " href="store.html">Buy now</a>
+						</div>
+						<div class="col col-center">
+							<button class="submenu anim-menu-btn" href="">
+								<i class="anim-menu-btn__icon anim-menu-btn__icon--close "></i>
+							</button>
+						</div>
+					</div>
+
+				</div>
+				<div class="header-wrapper">
+					<div class="header-content">
+						<div class="header-content-slide active">
+							<h1 class="letters">ČESKO</h1>
+							<p class="header-content-info">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui nulla quos magni accusamus
+							</p>
+							<a class=" button-main" href="store.html">Plant tree now</a>
+						</div>
+						<div class="header-content-slide">
+							<h1 class="letters">FLOU</h1>
+							<p class="header-content-info">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui nulla quos magni
+								accusamus
+							</p>
+							<a class=" button-main" href="store.html">Plant tree now</a>
+						</div>
+						<div class="header-content-slide ">
+							<h1 class="letters">WOOD</h1>
+							<p class="header-content-info">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui nulla quos magni
+								accusamus
+							</p>
+							<a class=" button-main" href="store.html">Plant tree now</a>
+						</div>
+					</div>
+				</div>
+			</header>
+		</div>
+		<div class="swiper-wrapper">
+			<div class="swiper-slide slider_item">
+				<div class="slider_layer" data-swiper-parallax="35%"
+					style="background-image: url(img/slides/slide-1-layer-back.jpg);"></div>
+				<div class="slider_layer" data-swiper-parallax="20%"
+					style="background-image: url(img/slides/slide-1-layer-middle.png);"></div>
+				<div class="slider_layer" data-swiper-parallax="10%"
+					style="background-image: url(img/slides/slide-1-layer-front.png);"></div>
+			</div>
+			<div class="swiper-slide slider_item">
+				<div class="slider_layer" data-swiper-parallax="35%"
+					style="background-image: url(img/slides/slide-2-layer-back.jpg);"></div>
+				<div class="slider_layer" data-swiper-parallax="20%"
+					style="background-image: url(img/slides/slide-2-layer-middle.png);"></div>
+				<div class="slider_layer" data-swiper-parallax="15%"
+					style="background-image: url(img/slides/slide-2-layer-front.png);"></div>
+			</div>
+			<div class="swiper-slide slider_item">
+				<div class="slider_layer" data-swiper-parallax="35%"
+					style="background-image: url(img/slides/slide-3-layer-back.jpg);"></div>
+				<div class="slider_layer" data-swiper-parallax="20%"
+					style="background-image: url(img/slides/slide-3-layer-middle.png);"></div>
+				<div class="slider_layer" data-swiper-parallax="15%"
+					style="background-image: url(img/slides/slide-3-layer-front.png);"></div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
