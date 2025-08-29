@@ -8,7 +8,8 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-a{
+
+a {
 	text-decoration: none;
 }
 
@@ -91,6 +92,96 @@ body {
 	width: 100%;
 	display: block;
 	width: 15.5em;
+}
+
+@media (max-width: 928px) {
+
+	.main-menu,
+	.button-top {
+		display: none;
+	}
+}
+
+.sidebar {
+	position: fixed;
+	top: 0;
+	right: -100%;
+	width: 80vw;
+	max-width: 320px;
+	height: 100%;
+	background: linear-gradient(145deg, #2b474b, #3fae7e);
+	box-shadow: -4px 0 12px rgba(0, 0, 0, 0.4), inset -2px -2px 6px rgba(255, 255, 255, 0.05), inset 2px 2px 6px rgba(0, 0, 0, 0.2);
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	color: var(--white-color);
+	padding: 30px 25px;
+	transition: right 0.4s ease;
+	z-index: 1001;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	box-shadow: -4px 0 12px rgba(0, 0, 0, 0.4);
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	pointer-events: auto;
+}
+
+.sidebar.active {
+	right: 0;
+}
+
+.sidebar-menu {
+	list-style: none;
+	padding: 0;
+	margin-top: 60px;
+	width: 100%;
+}
+
+.sidebar-menu li {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.sidebar-menu li a {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	color: var(--white-color);
+	font-size: 16px;
+	font-weight: 600;
+	text-decoration: none;
+	padding: 12px 18px;
+	border-radius: 12px;
+	transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.sidebar-menu li a i {
+	font-size: 18px;
+	transition: transform 0.3s ease;
+}
+
+.sidebar-menu li a:hover {
+	background-color: var(--green-color);
+	color: #fff;
+	transform: translateX(5px);
+}
+
+.sidebar-menu li a:hover i {
+	transform: scale(1.2);
+	color: #fff;
+}
+
+.close-sidebar {
+	background: none;
+	border: none;
+	font-size: 24px;
+	color: var(--white-color);
+	position: absolute;
+	top: 20px;
+	right: 25px;
+	cursor: pointer;
+	z-index: 1002;
 }
 
 .main-menu li {
@@ -193,7 +284,7 @@ body {
 .header-content-slide {
 	position: absolute;
 	height: 100%;
-    width: 100%;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -258,62 +349,62 @@ body {
 .logo,
 .main-menu,
 .button,
-.button-main, 
+.button-main,
 .submenu {
 	pointer-events: auto;
 }
 
 .button-main {
-  display: inline-block;
-  margin-top: 3em;
-  padding: 1.2em 3em;
-  background-color: var(--green-color);
-  color: var(--white-color);
-  border: 1.5px solid transparent;
-  border-radius: 10em 0 10em 0;
-  font-weight: 600;
-  font-size: 14px;
-  letter-spacing: 0.21em;
-  text-transform: uppercase;
-  text-align: center;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+	display: inline-block;
+	margin-top: 3em;
+	padding: 1.2em 3em;
+	background-color: var(--green-color);
+	color: var(--white-color);
+	border: 1.5px solid transparent;
+	border-radius: 10em 0 10em 0;
+	font-weight: 600;
+	font-size: 14px;
+	letter-spacing: 0.21em;
+	text-transform: uppercase;
+	text-align: center;
+	cursor: pointer;
+	transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .button-main:hover {
-  background-color: #3fae7e;
-  transform: scale(1.05);
+	background-color: #3fae7e;
+	transform: scale(1.05);
 }
 
 /* /////////////////////////////////////////////////////////////////////////////////////////////////////// */
 .under-construction {
-  background-color: #2B474B;
-  color: var(--white-color);
-  font-family: montserrat-g, sans-serif;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 2em;
+	background-color: #2B474B;
+	color: var(--white-color);
+	font-family: montserrat-g, sans-serif;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 2em;
 }
 
 .construction-wrapper {
-  max-width: 600px;
+	max-width: 600px;
 }
 
 .construction-wrapper h1 {
-  font-size: 3em;
-  text-transform: uppercase;
-  font-weight: 900;
-  margin-bottom: 0.5em;
-  color: var(--green-color);
+	font-size: 3em;
+	text-transform: uppercase;
+	font-weight: 900;
+	margin-bottom: 0.5em;
+	color: var(--green-color);
 }
 
 .construction-wrapper p {
-  font-size: 1.1em;
-  font-weight: 500;
-  line-height: 1.6;
-  color: var(--gray-color);
+	font-size: 1.1em;
+	font-weight: 500;
+	line-height: 1.6;
+	color: var(--gray-color);
 }

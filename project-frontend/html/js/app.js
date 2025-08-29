@@ -19,3 +19,21 @@ swiper.on('slideChange', function() {
 	})
 })
 
+document.addEventListener('DOMContentLoaded', () => {
+    const sidebar = document.getElementById('mobileSidebar');
+    const toggleBtn = document.querySelector('.anim-menu-btn');
+    const closeBtn = document.querySelector('.close-sidebar');
+
+    if (toggleBtn) {
+        toggleBtn.addEventListener('click', () => {
+            sidebar.classList.toggle('active');
+        });
+    }
+
+    if (closeBtn) {
+        closeBtn.addEventListener('click', () => {
+            sidebar.classList.remove('active');
+        });
+    }
+});
+

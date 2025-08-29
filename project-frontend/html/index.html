@@ -8,9 +8,9 @@
 	<script src="libs/btn/anim-menu-btn.min.js" defer></script>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 	<link rel="stylesheet" href="css/main.css">
 	<script src="js/app.js" defer></script>
-	<!-- браузер загружает скрипт параллельно с HTML, но выполняет его только после полной загрузки DOM -->
 </head>
 
 <body>
@@ -34,9 +34,20 @@
 						</div>
 						<div class="col col-center">
 							<button class="submenu anim-menu-btn" href="">
-								<i class="anim-menu-btn__icon anim-menu-btn__icon--close "></i>
+								<i class="anim-menu-btn__icon anim-menu-btn__icon--arrow-right "></i>
 							</button>
 						</div>
+						<aside class="sidebar" id="mobileSidebar">
+							<button class="submenu anim-menu-btn close-sidebar" href="">
+								<i class="anim-menu-btn__icon anim-menu-btn__icon--arrow-right "></i>
+							</button>
+							<ul class="sidebar-menu">
+								<li><a href="store.html"><i class="fas fa-home"></i> Main</a></li>
+								<li><a href="store.html"><i class="fas fa-info-circle"></i> Info</a></li>
+								<li><a href="store.html"><i class="fas fa-envelope"></i> Contact</a></li>
+								<li><a href="store.html"><i class="fas fa-shopping-cart"></i> Buy now</a></li>
+							</ul>
+						</aside>
 					</div>
 
 				</div>
